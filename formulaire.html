@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>formulaire</title>
+            <meta charset="UTF-8" />
+        </head>
+        <body>
+            <!--Demo Form début-->
+            <form align="center">
+                <label for="nom">Nom de Famille :</label>
+                <input type="text" name="NomDeFamille" id="nom" placeholder="nom de famille..." maxlength="255"/>
+                <label for="email">Votre Email</label>
+                <input type="email" name="Email" id="email" placeholder="ex:jonathan.pernodet@gmail.com" maxlength="255" autocomplete="off"/>
+                <label for="mdp">Votre mot de passe</label>
+                <input type="password" name="motDePasse" id="mdp" placeholder="Mot de passe" maxlength="255"/>
+            </form>
+            <!--Demo Form fin-->
+            <br/>
+            <hr size="4" width="50%" />
+            <br/>
+            <!--TP 1 form Début-->
+            <form align="center">
+                <label for="nom">Nom de Famille :</label>
+                <input type="text" name="NomDeFamille" id="nom" placeholder="nom de famille..." maxlength="255"/>
+                <label for="prenom">Prénom :</label>
+                <input type="text" name="prenom" id="prenom" placeholder="prénom..." maxlength="255"/>
+                <label for="insee">Numéro INSEE</label>
+                <input type="text" name="numero_insee" id="insee" placeholder="Numéro à 13 chiffres" maxlength="13"/>
+                <label for="code">Code secret</label>
+                <input type="password" name="code_secret" id="code" maxlength="8"/>
+            </form>
+            <!--TP 1 form Fin-->
+            <br/>
+            <hr size="4" width="50%" />
+            <br/>
+             <!--formulaire avec liste déroulante simple Debut-->
+            <form align="center">
+                <select>
+                    <option selected="selected" value="null ">Choisissez une couleur</option>
+                    <option value="rg">Rouge</option>
+                    <option value="bl">Bleu</option>
+                    <option value="vr">Vert</option>
+                </select>
+            </form>
+            <!--formulaire avec liste déroulante simple fin-->
+            <br/>
+            <hr size="4" width="50%" />
+            <br/>
+            <!--formulaire avec liste déroulante choix multiple Debut-->
+            <form align="center">
+                <select multiple="multiple" size="4">
+                    <option selected="selected" value="null">Choisissez une couleur</option>
+                    <option value="rg">Rouge</option>
+                    <option value="bl">Bleu</option>
+                    <option value="vr">Vert</option>
+                </select>
+            </form>
+            <!--formulaire avec liste déroulante choix multiple Fin-->
+            <br/>
+            <hr size="4" width="50%" />
+            <br/>
+            <!--Case à cocher Debut-->
+            <form align="center">
+                <input type="checkbox" name="repas" value="repas" id="repas"/><label for="repas">Repas</label>
+            </form>
+            <!--Case à cocher Fin-->
+            <br/>
+            <hr size="4" width="50%" />
+            <br/>
+            <form align="center">
+                <input type="button" name="boutonEnvoie" value="Envoyer"/>
+                <input type="reset" name="resetButton" value="Annuler"/>
+                <input type="file" name="fichier" value="choix_fichier" id="choisir un fichier"/>
+            </form>
+            <br/>
+            <hr size="4" width="50%" />
+            <br/>
+            <!--TP 2 Form Début-->
+            <table border="0" width="600px">
+                <form>
+                    <tr align="left">
+                        <td><label id="name">Nom :</label></td>
+                        <td><input type="text" name="nom" id="name" placeholder="Ex: Dupont" maxlength="255"/></td>
+                    </tr>
+                    <tr align="left">
+                        <td><label id="prenom">Prénom :</label></td>
+                        <td><input type="text" name="prenom" id="prenom" placeholder="Ex: Hadrien" maxlength="255"/></td>
+                    </tr>
+                    <tr align="left">
+                        <td><label for="insee">Numéro INSEE :</label></td>
+                        <td><input type="number" name="numero_insee" id="insee" placeholder="Ex:0123456789" maxlength="13"/></td>
+                    </tr>
+                    <tr align="left">
+                        <td><label id="password">Code secret :</label></td>
+                        <td><input type="password" name="mdp" id="password" placeholder="Votre mot de passe"/></td>
+                    </tr>
+                    <tr align="left">
+                        <td><label for="couleur">Couleur :</label></td>
+                        <td><input type="color" name="color" id="couleur"/></td>
+                    </tr>
+                    <tr align="left">
+                        <td><label for="date">Date de naissance :</label></td>
+                        <td><input type="date" name="date" id="date" placeholder="JJ/MM/AAAA"/></td>
+                    </tr>
+                    <tr align="left">
+                        <td><label for="sexe">Sexe :</label></td>
+                        <td>
+                            <input type="radio" name="sexe" id="Man" checked="checked"/><label for="Man">Homme</label>
+                            <input type="radio" name="sexe" id="Woman"/><label for="Woman">Femme</label>                        
+                        </td>
+                    </tr>
+                </form>
+            </table>
+            <!--TP 2 Form Fin-->
+            <br/>
+            <hr size="4" width="50%" />
+            <br/>
+            <!--TP 3 Form Début-->
+            <div>
+                <form>
+                    <fieldset><legend>Etat civile</legend>
+                        <table width="600px">
+                                <tr>
+                                    <td><label for="name">Nom :</label></td>
+                                    <td><input type="text" name="nom" id="name" maxlength="255" autocomplete="off"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="prenom">Prénom :</label></td>
+                                    <td><input type="text" name="first_name" id="prenom" maxlength="255" autocomplete="off"></td>
+                                </tr>
+                                <tr align="left">
+                                    <td><label for="sexe2">Sexe :</label></td>
+                                    <td>
+                                        <input type="radio" name="sexe" id="Man2" checked="checked"/><label for="Man2">Homme</label>
+                                        <input type="radio" name="sexe" id="Woman2"/><label for="Woman2">Femme</label>                        
+                                    </td>
+                                </tr>
+                                <tr align="left">
+                                    <td><label for="date2">Date de naissance :</label></td>
+                                    <td><input type="number" placeholder="JJ">
+                                        <select name="mois" id="mois">
+                                            <option value="1">Janvier</option>
+                                            <option value="2">Février</option>
+                                            <option value="3">Mars</option>
+                                            <option value="4">Avril</option>
+                                            <option value="5">Mai</option>
+                                            <option value="6">Juin</option>
+                                            <option value="7">Juillet</option>
+                                            <option value="8">Aout</option>
+                                            <option value="9">Septembre</option>
+                                            <option value="10">Octobre</option>
+                                            <option value="11">Novembre</option>
+                                            <option value="12">Décembre</option>
+                                        </select> 
+                                        <input type="number" placeholder="AAAA">
+                                    </td>
+                                </tr>
+                        </table>
+                    </fieldset>
+                    <fieldset><legend>Information personnel diverse</legend>
+                        <table width="800px">
+                            <tr>
+                                <td><label for="check">Thème Favoris :</label></td>
+                                <td>
+                                    <input type="checkbox" name="check" id="cinema"/><label for="cinema">Cinema</label><br/>
+                                    <input type="checkbox" name="check" id="bourse"/><label for="bourse">Bourse</label><br/>
+                                    <input type="checkbox" name="check" id="informatique"/><label for="informatique">Informatique</label><br/>
+                                    <input type="checkbox" name="check" id="litterature"/><label for="litterature">Littérature</label><br/>
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="check" id="sport"/><label for="sport">Sport</label><br/>
+                                    <input type="checkbox" name="check" id="musique"/><label for="musique">Musique</label><br/>
+                                    <input type="checkbox" name="check" id="jeux"/><label for="jeux">Jeux</label><br/>
+                                    <input type="checkbox" name="check" id="voyage"/><label for="voyage">Voyage</label><br/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="transport">Moyen de transport :</label></td>
+                                <td>
+                                    <select multiple="multiple" size="3">
+                                        <option selected="selected" value="moyen_transport">--Moyen de transport--</option>
+                                        <option value="voiture">Voiture</option>
+                                        <option value="train">Train</option>
+                                        <option value="velo">Velo</option>
+                                        <option value="covoiturage">Covoiturage</option>
+                                        <option value="taxi">Taxi</option>
+                                        <option value="Avion">Avion</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label id="password2">Code secret :</label></td>
+                                <td><input type="password" name="mdp" id="password2" placeholder="Votre mot de passe"/></td>
+                            </tr>
+                            <tr>
+                                <td><label for="commentaire">Commentaires sur le produit testé:</label></td>
+                                <td><input type="text" name="commentaire" id="commentaire" maxlength="255"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="receive" value="receive" id="reveive"/><label for="receive">Je souhaite recevoir la documentation sur vos produits</label></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <div>
+                        <input type="button" name="boutonEnvoie" value="Envoyer"/>
+                        <input type="reset" name="resetButton" value="Annuler"/>
+                    </div>
+                </form>
+            </div> 
+            <!--TP 3 Form Fin-->
+        </body>
+    </html>

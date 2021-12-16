@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Tableau</title>
+            <meta charset="UTF-8" />
+        </head>
+        <body>
+            <!--Début du tableau-->
+            <table border="1px" cellspacing="0" align="center">
+                <tr><!--<tr> définit une rangée dans une table de HTML-->
+                    <th>Etudiant</th><!--<th>définit une cellule d'en-tête dans une table de HTML l'élément sera en gras-->
+                    <th>Note</th>
+                </tr>
+                <tr>
+                    <td>Max</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Yves</td>
+                    <td>5</td>
+                </tr>
+            </table>
+            <!--Fin du Tableau-->
+            <br/>
+            <br/>
+            <hr size="4" width="50%" />
+            <br/>
+            <br/>
+            <table border="2px" cellspacing="0" align="center">
+                <tr align="center">
+                    <th colspan="2">colonnes 1 et 2 fusionnées</th>
+                    <th>colonne 3</th>
+                    <th colspan="2">colonnes 4 et 5 fusionnées</th>
+                </tr>
+                <tr align="center">
+                    <td>colonne 1</td><!--<td>définit une cellule standard dans une table de HTML-->
+                    <td>colonne 2</td>
+                    <td>colonne 3</td>
+                    <td>colonne 4</td>
+                    <td>colonne 5</td>
+                </tr>
+                <tr align="center">
+                    <td>colonne 1</td>
+                    <td colspan="3">colonnes 2,3 et 4 fusionnées</td>
+                    <td>colonne 5</td>
+                </tr>
+            </table>
+            <br/>
+            <br/>
+            <hr size="4" width="50%"/>
+            <br/>
+            <br/>
+            <table border="2px" cellspacing="0" align="center" width="600px"><!--Le tableau aura une bordure de 2px avec un alignement au centre de la page et une largeur de 600px-->
+                <tr align="left">
+                    <th colspan="2">1</th><!--Colspan permet de fusionner des cellules dans la même ligne-->
+                    <th colspan="2">2</th>
+                    <th colspan="2">3</th>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td rowspan="3">5</td><!--Rowspan permet de fusionner des cellules dans la même colonne-->
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td colspan="2" rowspan="2">14</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>16</td>
+                </tr>
+            </table>
+        </body>

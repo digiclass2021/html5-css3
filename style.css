@@ -1,0 +1,48 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+h1, h2
+{
+    text-align: center;
+}
+h1
+{
+    text-decoration: underline;
+}
+.bouton
+{
+    display: flex;
+    justify-content: center;
+    border: 2px solid rgb(128, 243, 21);
+}
+.content
+{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    border: 2px solid blueviolet;
+    background-image: url(img/noel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ligne
+{
+    border: 2px solid rgb(226, 101, 43);
+}
+.style_buton 
+{
+    background-color: red;
+    color: white;
+    border: 0;
+    padding: 10px 25px 10px 25px;
+    border-radius: 30px;
+    
+}
+.style_buton:hover
+{
+    background-color: rgb(128, 243, 21);
+    box-shadow: 4px 4px 5px slategray;
+}

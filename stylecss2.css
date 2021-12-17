@@ -1,0 +1,56 @@
+.containerSecond
+{
+    width: 100%;
+    border: 2px solid green;
+    height: auto;
+}
+.BoxImage
+{
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 15px;
+    height: 250px;
+    margin: 40px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+}
+.row
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.imagestyle
+{
+    min-height: 250px;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+@media screen and (max-width: 767px) 
+{
+    .BoxImage
+    {
+        border-radius: 50%;
+        border: 2px solid red;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px)
+{
+    .BoxImage
+        { 
+            border-radius: 15px;
+            border : 2px solid blue;
+        }
+}
+
+@media screen and (min-width: 1025px)
+{
+    .BoxImage
+        { 
+            border: 2px solid black;
+        }
+}

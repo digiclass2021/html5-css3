@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
 input:focus,textarea:focus{
   outline: none;
 }
@@ -12,6 +14,7 @@ input:focus,textarea:focus{
   justify-content: center;
   width: 100%;
   padding-bottom: 60px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .header {
@@ -23,10 +26,7 @@ input:focus,textarea:focus{
 }
 
 .section {
-  background-color: #FFF;
-  border-radius: 30px;
-  justify-content: center;
-  width: 640px;
+  width: 600px;
 }
 
 .header-actions {
@@ -37,8 +37,23 @@ input:focus,textarea:focus{
   height: 30px;
 }
 
+.search-bar input {
+  border: none;
+  background-color: #D32F2F;
+  padding: 15px;
+  border-radius: 30px;
+  color: white;
+}
+
+.card {
+  background-color: #FFF;
+  border-radius: 30px;
+  justify-content: center;
+  box-shadow: 0px 60px 120px rgba(0, 0, 0, 0.3);
+}
+
 .card-header {
-  padding: 15px 30px;
+  padding: 15px;
 }
 
 .card-title h1,
@@ -52,8 +67,8 @@ input:focus,textarea:focus{
 }
 
 .card-content img {
-  max-height: 640px;
-  max-width: 640px;
+  max-height: 600px;
+  max-width: 600px;
 }
 
 .avatar img {
@@ -64,12 +79,13 @@ input:focus,textarea:focus{
 
 .card-footer {
   justify-content: center;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
 }
 
 button.like {
   width: 140px;
   height: 45px;
+  background-color: #D32F2F;
   line-height: 45px;
   font-size: 11px;
   text-transform: uppercase;
@@ -78,14 +94,20 @@ button.like {
   color: #fff;
   text-align: center;
   vertical-align: auto;
-  background-color: #D32F2F;
   border: none;
   border-radius: 15px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
+  transition: all 0.1s ease 0s;
   cursor: pointer;
   outline: none;
   margin: 20px;
+}
+
+button.like:hover {
+  background-color: #D32F2F;
+  box-shadow: 0px 15px 20px #B71C1C;
+  color: #fff;
+  transform: translateY(-4px);
 }
 
 .card-footer-comment {
@@ -98,9 +120,8 @@ textarea.comment {
   border-right: none;
   border-bottom: 3px solid #D32F2F;
   color: #D32F2F;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 27px;
   height: 30px;
   resize: none;
-  width: 560px;
+  width: 580px;
 }
